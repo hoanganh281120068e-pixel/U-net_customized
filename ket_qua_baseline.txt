@@ -1,11 +1,16 @@
 Thiet bi: cuda
-Kich thuoc anh: 128x128
+Tap du lieu: splits cua Thanh vien 1
+So mau train / val / test: 2944 / 736 / 3669
+Kich thuoc anh: 256x256
+Chuan hoa dau vao: [0, 1]
+Pixel vien (255): bo qua khi tinh loss va metric
 Base channels: 32
 So tham so (trieu): 7.76
 So epoch: 20
+Batch size / learning rate: 8 / 0.0001
 Epoch tot nhat: 20
-Thoi gian train (phut): 11.49
-Val IoU tot nhat: 0.8022
-Test IoU: 0.7923
-Test Dice: 0.8748
-Toc do du doan (ms/anh): 3.12
+Thoi gian train (phut): 31.42
+Val IoU tot nhat: 0.8846
+Test IoU: 0.8837
+Test Dice: 0.9289
+Toc do du doan (ms/anh): 7.72
