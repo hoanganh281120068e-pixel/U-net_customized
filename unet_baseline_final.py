@@ -10,6 +10,8 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
 DUONG_DAN_DATA = Path(r"D:\hoc_it\TTNT\TTNT")
+if not DUONG_DAN_DATA.exists():
+    DUONG_DAN_DATA = Path(__file__).resolve().parent
 sys.path.insert(0, str(DUONG_DAN_DATA))
 
 import data_pipeline as dp
